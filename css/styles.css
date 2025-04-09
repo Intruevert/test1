@@ -1,10 +1,10 @@
 /* medical_style.css */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     line-height: 1.6;
-    background-color: #f8f9fa;
-    color: #343a40;
+    background-color: #f4f8fa; /* Світлий фон */
+    color: #37474f; /* Темно-сірий текст */
     font-size: 16px;
 }
 
@@ -15,11 +15,11 @@ body {
 }
 
 .medical-header {
-    background-color: #007bff;
+    background-color: #00897b; /* Темно-зелений колір, більш медичний */
     color: white;
     padding: 15px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: sticky; /* Фіксована навігація зверху */
+    position: sticky;
     top: 0;
     z-index: 100;
 }
@@ -28,45 +28,42 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Дозволяє переносити елементи на менших екранах */
+    flex-wrap: wrap;
 }
 
 .logo {
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.8em;
     font-weight: bold;
     margin-right: 20px;
-    margin-bottom: 10px; /* Додатковий відступ для мобільних */
-    flex-basis: 100%; /* Лого на всю ширину на малих екранах */
-    text-align: center;
 }
 
 .tagline {
     font-size: 0.8em;
-    color: #ddd;
-    display: block; /* Підзаголовок під лого на малих екранах */
-    text-align: center;
+    color: #e0f2f7; /* Світло-блакитний */
+    display: block;
 }
 
-.medical-header nav {
+.main-nav {
     flex-grow: 1;
-    text-align: center; /* Центрування навігації на малих екранах */
+    text-align: right;
 }
 
-.medical-header nav ul {
+.main-nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center; /* Центрування навігаційних елементів */
+    justify-content: flex-end;
     flex-wrap: wrap;
 }
 
-.medical-header nav ul li {
-    margin: 0 15px;
+.main-nav ul li {
+    margin-left: 15px;
     margin-bottom: 5px;
 }
 
-.medical-header nav ul li a {
+.main-nav ul li a {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -75,9 +72,39 @@ body {
     border-radius: 5px;
 }
 
-.medical-header nav ul li a:hover {
-    color: #ddd;
+.main-nav ul li a:hover {
+    color: #e0f2f7;
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hamburger {
+    display: none; /* Приховати на десктопах */
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: translateY(8px) rotate(-45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(45deg);
 }
 
 .medical-main {
@@ -87,7 +114,7 @@ body {
 .section {
     margin-bottom: 40px;
     padding-bottom: 30px;
-    border-bottom: 1px solid #dee2e6;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .section:last-child {
@@ -97,19 +124,21 @@ body {
 .intro {
     text-align: center;
     padding: 50px 0;
-    background-color: #e9ecef;
+    background-color: #e8f5e9; /* Світло-зелений фон */
     border-radius: 8px;
     margin-bottom: 40px;
 }
 
 .intro h1 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 2.5em;
     margin-bottom: 15px;
+    color: #00897b;
 }
 
 .intro .lead {
     font-size: 1.2em;
-    color: #495057;
+    color: #43a047; /* Зелений колір тексту */
     margin-bottom: 25px;
 }
 
@@ -118,14 +147,15 @@ body {
 }
 
 h1, h2, h3 {
-    color: #007bff;
+    font-family: 'Montserrat', sans-serif;
+    color: #00897b;
     margin-top: 0;
     margin-bottom: 1em;
 }
 
 .lead {
     font-size: 1.1em;
-    color: #6c757d;
+    color: #757575;
     margin-bottom: 1.5em;
 }
 
@@ -142,24 +172,24 @@ h1, h2, h3 {
 .chart-title {
     text-align: center;
     font-style: italic;
-    color: #6c757d;
+    color: #757575;
     margin-top: 5px;
     font-size: 0.9em;
 }
 
 .result-text {
     margin-bottom: 1em;
-    color: #495057;
+    color: #546e7a;
 }
 
 .comment {
-    background-color: #e9ecef;
+    background-color: #e8f5e9;
     padding: 15px;
     border-radius: 5px;
     margin-top: 10px;
     font-style: italic;
-    color: #555;
-    border: 1px solid #ced4da;
+    color: #558b2f; /* Темно-зелений для коментарів */
+    border: 1px solid #c8e6c9; /* Світло-зелена межа */
     font-size: 0.95em;
 }
 
@@ -167,7 +197,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    border: 1px solid #dee2e6;
+    border: 1px solid #e0e0e0;
     border-radius: 5px;
     overflow: hidden;
     background-color: white;
@@ -176,25 +206,26 @@ table {
 }
 
 th, td {
-    border: 1px solid #dee2e6;
+    border: 1px solid #e0e0e0;
     padding: 10px;
     text-align: left;
 }
 
 th {
-    background-color: #f8f9fa;
+    background-color: #f1f8e9; /* Світло-зелений для заголовків таблиць */
     font-weight: bold;
+    color: #388e3c; /* Зелений колір тексту заголовків */
 }
 
 .conclusion-text {
     font-size: 1.1em;
-    color: #28a745;
+    color: #1b5e20; /* Темно-зелений для висновків */
     font-weight: bold;
     margin-top: 2em;
 }
 
 .contact-us {
-    background-color: #f8f9fa;
+    background-color: #e0f2f7; /* Світло-блакитний фон для контактів */
     padding: 40px 0;
     border-radius: 8px;
     text-align: center;
@@ -202,12 +233,13 @@ th {
 
 .contact-us h2 {
     margin-bottom: 20px;
+    color: #0277bd; /* Синій колір для заголовка контактів */
 }
 
 .contact-us p {
     line-height: 1.8;
     margin-bottom: 10px;
-    color: #495057;
+    color: #546e7a;
 }
 
 .medical-button {
@@ -216,10 +248,151 @@ th {
     margin: 10px;
     text-decoration: none;
     color: white;
-    background-color: #28a745;
+    background-color: #43a047; /* Зелений колір для основних кнопок */
     border: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: background;-color: 0.3s ease;
-    font-size: 1em;
+    transition: background-color 0.3s ease;
+    font-size: 0.9em;
+}
+
+.medical-button:hover {
+    background-color: #388e3c;
+}
+
+.medical-button.secondary {
+    background-color: #0277bd; /* Синій колір для вторинних кнопок */
+}
+
+.medical-button.secondary:hover {
+    background-color: #01579b;
+}
+
+.medical-footer {
+    background-color: #37474f; /* Темно-сірий фон футера */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.medical-footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.medical-footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.medical-footer nav ul li {
+    margin: 0 10px;
+    margin-bottom: 5px;
+}
+
+.medical-footer nav ul li a {
+    color: #e0f2f7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.medical-footer nav ul li a:hover {
+    color: #b2ebf2;
+}
+
+/* Адаптація для малих екранів (до 768px) */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .medical-header .container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 1.5em;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .tagline {
+        display: none; /* Приховати підзаголовок на малих екранах */
+    }
+
+    .main-nav {
+        display: none; /* Приховати основну навігацію за замовчуванням */
+        position: absolute;
+        top: 60px; /* Розмістити під хедером */
+        left: 0;
+        width: 100%;
+        background-color: #00897b;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .main-nav.open {
+        display: block;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav ul li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block; /* Показати бургер-меню */
+    }
+
+    .intro h1 {
+        font-size: 2em;
+    }
+
+    .intro .lead {
+        font-size: 1em;
+    }
+
+    .chart-container {
+        width: 100%; /* Графіки на всю ширину на малих екранах */
+    }
+
+    table {
+        font-size: 0.8em;
+    }
+
+    .medical-button {
+        font-size: 0.9em;
+        padding: 10px 20px;
+        margin: 5px;
+    }
+
+    .contact-us h2 {
+        font-size: 1.5em;
+    }
+
+    .medical-footer .container {
+        font-size: 0.75em;
+    }
+
+    .medical-footer nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .medical-footer nav ul li {
+        margin: 5px 0;
+    }
 }
