@@ -36,19 +36,19 @@ document.addEventListener('DOMContentLoaded', function() {
         ipssChartInstance = new Chart(ipssCtx, {
             type: 'bar',
             data: {
-                labels: ['Uroxel', 'Плацебо', 'Стандартне лікування'],
+                labels: ['Uroxel', 'Placebo', 'Tratamiento Estándar'],
                 datasets: [{
-                    label: 'Середня зміна балу IPSS',
+                    label: 'Cambio Promedio en la Puntuación IPSS',
                     data: [-9.5, -3.5, -5.1],
                     backgroundColor: [
-                        'rgba(0, 123, 255, 0.7)', // Blue
-                        'rgba(108, 117, 125, 0.7)', // Grey
-                        'rgba(220, 53, 69, 0.7)' // Red
+                        'rgba(33, 150, 243, 0.7)', // Azul
+                        'rgba(158, 158, 158, 0.7)', // Gris
+                        'rgba(244, 67, 54, 0.7)'  // Rojo
                     ],
                     borderColor: [
-                        'rgba(0, 123, 255, 1)',
-                        'rgba(108, 117, 125, 1)',
-                        'rgba(220, 53, 69, 1)'
+                        'rgba(33, 150, 243, 1)',
+                        'rgba(158, 158, 158, 1)',
+                        'rgba(244, 67, 54, 1)'
                     ],
                     borderWidth: 1
                 }]
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         beginAtZero: true,
                         title: {
                             display: true,
-                            text: 'Зміна балів (зниження)'
+                            text: 'Cambio en Puntos (Reducción)'
                         }
                     }
                 },
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     label += ': ';
                                 }
                                 if (context.parsed.y !== null) {
-                                    label += Math.abs(context.parsed.y).toFixed(1) + ' балів';
+                                    label += Math.abs(context.parsed.y).toFixed(1) + ' puntos';
                                 }
                                 return label;
                             }
@@ -91,19 +91,19 @@ document.addEventListener('DOMContentLoaded', function() {
         significantImprovementChartInstance = new Chart(significantImprovementCtx, {
             type: 'bar',
             data: {
-                labels: ['Uroxel', 'Плацебо', 'Стандартне лікування'],
+                labels: ['Uroxel', 'Placebo', 'Tratamiento Estándar'],
                 datasets: [{
-                    label: 'Частка пацієнтів зі значним поліпшенням',
+                    label: 'Proporción de Pacientes con Mejoría Significativa',
                     data: [82, 32, 45],
                     backgroundColor: [
-                        'rgba(25, 135, 84, 0.7)', // Green
-                        'rgba(108, 117, 125, 0.7)', // Grey
-                        'rgba(255, 193, 7, 0.7)' // Yellow
+                        'rgba(76, 175, 80, 0.7)',  // Verde
+                        'rgba(158, 158, 158, 0.7)', // Gris
+                        'rgba(255, 235, 59, 0.7)'  // Amarillo
                     ],
                     borderColor: [
-                        'rgba(25, 135, 84, 1)',
-                        'rgba(108, 117, 125, 1)',
-                        'rgba(255, 193, 7, 1)'
+                        'rgba(76, 175, 80, 1)',
+                        'rgba(158, 158, 158, 1)',
+                        'rgba(255, 235, 59, 1)'
                     ],
                     borderWidth: 1
                 }]
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         max: 100,
                         title: {
                             display: true,
-                            text: 'Частка пацієнтів (%)'
+                            text: 'Proporción de Pacientes (%)'
                         }
                     }
                 },
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Почати спостереження за контейнерами графіків
+    // Iniciar la observación de los contenedores de los gráficos
     ipssObserver.observe(ipssChartContainer);
     significantImprovementObserver.observe(significantImprovementChartContainer);
 });

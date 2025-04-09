@@ -1,10 +1,10 @@
-/* medical_style.css */
+/* medical_style_es.css */
 body {
     font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     line-height: 1.6;
-    background-color: #f4f8fa; /* Світлий фон */
-    color: #37474f; /* Темно-сірий текст */
+    background-color: #f4f8fa; /* Fondo claro */
+    color: #37474f; /* Texto gris oscuro */
     font-size: 16px;
 }
 
@@ -15,7 +15,7 @@ body {
 }
 
 .medical-header {
-    background-color: #00897b; /* Темно-зелений колір, більш медичний */
+    background-color: #2979ff; /* Azul más brillante, común en sitios médicos */
     color: white;
     padding: 15px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -40,7 +40,7 @@ body {
 
 .tagline {
     font-size: 0.8em;
-    color: #e0f2f7; /* Світло-блакитний */
+    color: #e1f5fe; /* Azul muy claro */
     display: block;
 }
 
@@ -73,12 +73,12 @@ body {
 }
 
 .main-nav ul li a:hover {
-    color: #e0f2f7;
+    color: #e1f5fe;
     background-color: rgba(255, 255, 255, 0.1);
 }
 
 .hamburger {
-    display: none; /* Приховати на десктопах */
+    display: none; /* Ocultar en escritorios */
     cursor: pointer;
     background: none;
     border: none;
@@ -124,7 +124,7 @@ body {
 .intro {
     text-align: center;
     padding: 50px 0;
-    background-color: #e8f5e9; /* Світло-зелений фон */
+    background-color: #e3f2fd; /* Azul muy claro para la introducción */
     border-radius: 8px;
     margin-bottom: 40px;
 }
@@ -133,12 +133,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5em;
     margin-bottom: 15px;
-    color: #00897b;
+    color: #2979ff;
 }
 
 .intro .lead {
     font-size: 1.2em;
-    color: #43a047; /* Зелений колір тексту */
+    color: #1e88e5; /* Azul más oscuro para el texto principal */
     margin-bottom: 25px;
 }
 
@@ -148,7 +148,7 @@ body {
 
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
-    color: #00897b;
+    color: #2979ff;
     margin-top: 0;
     margin-bottom: 1em;
 }
@@ -183,13 +183,13 @@ h1, h2, h3 {
 }
 
 .comment {
-    background-color: #e8f5e9;
+    background-color: #e3f2fd;
     padding: 15px;
     border-radius: 5px;
     margin-top: 10px;
     font-style: italic;
-    color: #558b2f; /* Темно-зелений для коментарів */
-    border: 1px solid #c8e6c9; /* Світло-зелена межа */
+    color: #1976d2; /* Azul más oscuro para comentarios */
+    border: 1px solid #bbdefb; /* Borde azul claro */
     font-size: 0.95em;
 }
 
@@ -212,20 +212,20 @@ th, td {
 }
 
 th {
-    background-color: #f1f8e9; /* Світло-зелений для заголовків таблиць */
+    background-color: #e0f7fa; /* Azul muy claro para encabezados de tabla */
     font-weight: bold;
-    color: #388e3c; /* Зелений колір тексту заголовків */
+    color: #0288d1; /* Azul más oscuro para texto de encabezados */
 }
 
 .conclusion-text {
     font-size: 1.1em;
-    color: #1b5e20; /* Темно-зелений для висновків */
+    color: #0d47a1; /* Azul muy oscuro para conclusiones */
     font-weight: bold;
     margin-top: 2em;
 }
 
 .contact-us {
-    background-color: #e0f2f7; /* Світло-блакитний фон для контактів */
+    background-color: #e1f5fe; /* Azul muy claro para contacto */
     padding: 40px 0;
     border-radius: 8px;
     text-align: center;
@@ -233,7 +233,7 @@ th {
 
 .contact-us h2 {
     margin-bottom: 20px;
-    color: #0277bd; /* Синій колір для заголовка контактів */
+    color: #0d47a1; /* Azul muy oscuro para título de contacto */
 }
 
 .contact-us p {
@@ -248,7 +248,7 @@ th {
     margin: 10px;
     text-decoration: none;
     color: white;
-    background-color: #43a047; /* Зелений колір для основних кнопок */
+    background-color: #1e88e5; /* Azul más oscuro para botones principales */
     border: none;
     border-radius: 5px;
     font-weight: bold;
@@ -257,19 +257,19 @@ th {
 }
 
 .medical-button:hover {
-    background-color: #388e3c;
+    background-color: #1565c0;
 }
 
 .medical-button.secondary {
-    background-color: #0277bd; /* Синій колір для вторинних кнопок */
+    background-color: #0d47a1; /* Azul muy oscuro para botones secundarios */
 }
 
 .medical-button.secondary:hover {
-    background-color: #01579b;
+    background-color: #00227b;
 }
 
 .medical-footer {
-    background-color: #37474f; /* Темно-сірий фон футера */
+    background-color: #37474f; /* Gris oscuro para el pie de página */
     color: white;
     padding: 15px 0;
     text-align: center;
@@ -298,16 +298,16 @@ th {
 }
 
 .medical-footer nav ul li a {
-    color: #e0f2f7;
+    color: #e1f5fe;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .medical-footer nav ul li a:hover {
-    color: #b2ebf2;
+    color: #b3e5fc;
 }
 
-/* Адаптація для малих екранів (до 768px) */
+/* Adaptación para pantallas pequeñas (hasta 768px) */
 @media (max-width: 768px) {
     .container {
         padding: 10px;
@@ -326,16 +326,16 @@ th {
     }
 
     .tagline {
-        display: none; /* Приховати підзаголовок на малих екранах */
+        display: none; /* Ocultar subtítulo en pantallas pequeñas */
     }
 
     .main-nav {
-        display: none; /* Приховати основну навігацію за замовчуванням */
+        display: none; /* Ocultar navegación principal por defecto */
         position: absolute;
-        top: 60px; /* Розмістити під хедером */
+        top: 60px; /* Colocar debajo del encabezado */
         left: 0;
         width: 100%;
-        background-color: #00897b;
+        background-color: #2979ff;
         text-align: center;
         padding: 10px 0;
     }
@@ -354,7 +354,7 @@ th {
     }
 
     .hamburger {
-        display: block; /* Показати бургер-меню */
+        display: block; /* Mostrar menú hamburguesa */
     }
 
     .intro h1 {
@@ -366,7 +366,7 @@ th {
     }
 
     .chart-container {
-        width: 100%; /* Графіки на всю ширину на малих екранах */
+        width: 100%; /* Gráficos a ancho completo en pantallas pequeñas */
     }
 
     table {
