@@ -1,0 +1,257 @@
+/* medical_style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6; /* Трохи менший міжрядковий інтервал для мобільних */
+    background-color: #f8f9fa;
+    color: #343a40;
+    font-size: 16px; /* Базовий розмір шрифту */
+}
+
+.container {
+    max-width: 100%; /* Контейнер на всю ширину */
+    padding: 15px; /* Менші відступи */
+    margin: 0 auto;
+}
+
+.medical-header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 0; /* Менші вертикальні відступи */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.medical-header .container {
+    display: flex;
+    flex-direction: column; /* Лого та навігація один під одним */
+    align-items: center; /* Центрування елементів */
+}
+
+.logo {
+    font-size: 1.5em; /* Менший розмір логотипу */
+    font-weight: bold;
+    margin-bottom: 10px; /* Відступ від лого до навігації */
+    text-align: center;
+}
+
+.tagline {
+    font-size: 0.7em; /* Менший розмір підзаголовка */
+    color: #ddd;
+}
+
+.medical-header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row; /* Навігація в один рядок */
+    justify-content: center; /* Центрування навігаційних елементів */
+    flex-wrap: wrap; /* Перенесення елементів, якщо не вміщаються */
+}
+
+.medical-header nav ul li {
+    margin: 0 10px; /* Менші відступи між елементами навігації */
+    margin-bottom: 5px; /* Додатковий відступ знизу для перенесених елементів */
+}
+
+.medical-header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em; /* Менший розмір шрифту навігації */
+    transition: color 0.3s ease;
+    padding: 8px 12px; /* Менші відступи для кнопок навігації */
+    border-radius: 5px;
+}
+
+.medical-header nav ul li a:hover {
+    color: #ddd;
+    background-color: rgba(255, 255, 255, 0.1); /* Легкий фон при наведенні */
+}
+
+.medical-main {
+    padding: 20px 0; /* Менші вертикальні відступи */
+}
+
+.section {
+    margin-bottom: 30px; /* Менші відступи між секціями */
+    padding-bottom: 20px; /* Менші внутрішні відступи знизу */
+    border-bottom: 1px solid #dee2e6;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+h1, h2, h3 {
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 0.8em; /* Менший відступ знизу для заголовків */
+    font-size: 1.8em; /* Трохи менший розмір h1 */
+}
+
+h2 {
+    font-size: 1.5em; /* Трохи менший розмір h2 */
+}
+
+h3 {
+    font-size: 1.2em; /* Трохи менший розмір h3 */
+}
+
+.lead {
+    font-size: 1em; /* Менший розмір основного тексту */
+    color: #6c757d;
+    margin-bottom: 1.2em; /* Менший відступ знизу */
+}
+
+.chart-container {
+    width: 100%; /* Графіки на всю ширину контейнера */
+    margin: 15px auto; /* Менші вертикальні відступи */
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    padding: 10px; /* Менші внутрішні відступи */
+}
+
+.chart-title {
+    text-align: center;
+    font-style: italic;
+    color: #6c757d;
+    margin-top: 5px;
+    font-size: 0.9em; /* Менший розмір підпису до графіка */
+}
+
+.result-text {
+    margin-bottom: 0.8em; /* Менший відступ знизу */
+    color: #495057;
+    font-size: 0.95em; /* Трохи менший розмір тексту результатів */
+}
+
+.comment {
+    background-color: #e9ecef;
+    padding: 10px; /* Менші внутрішні відступи */
+    border-radius: 5px;
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+    border: 1px solid #ced4da;
+    font-size: 0.9em; /* Менший розмір коментарів */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px; /* Менший відступ зверху */
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    font-size: 0.85em; /* Менший розмір шрифту таблиці */
+}
+
+th, td {
+    border: 1px solid #dee2e6;
+    padding: 8px; /* Менші внутрішні відступи в таблиці */
+    text-align: left;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.conclusion-text {
+    font-size: 1em; /* Трохи менший розмір висновків */
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 1.5em; /* Менший відступ зверху */
+}
+
+.call-to-action-section {
+    text-align: center;
+    padding: 30px 0; /* Менші вертикальні відступи */
+    background-color: #e9ecef;
+    border-radius: 5px;
+    margin-top: 20px; /* Менший відступ зверху */
+}
+
+.call-to-action-section h2 {
+    color: #007bff;
+    font-size: 1.3em; /* Менший розмір заголовка секції заклику до дії */
+}
+
+.call-to-action-section p {
+    color: #495057;
+    margin-bottom: 15px; /* Менший відступ знизу */
+    font-size: 0.95em; /* Трохи менший розмір тексту заклику до дії */
+}
+
+.medical-button {
+    display: inline-block;
+    padding: 10px 20px; /* Менші внутрішні відступи кнопок */
+    margin: 8px; /* Менші відступи між кнопками */
+    text-decoration: none;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-size: 0.9em; /* Менший розмір шрифту кнопок */
+}
+
+.medical-button:hover {
+    background-color: #218838;
+}
+
+.medical-button.secondary {
+    background-color: #007bff;
+}
+
+.medical-button.secondary:hover {
+    background-color: #0056b3;
+}
+
+.medical-footer {
+    background-color: #343a40;
+    color: white;
+    padding: 15px 0; /* Менші вертикальні відступи */
+    text-align: center;
+    font-size: 0.8em; /* Менший розмір шрифту футера */
+}
+
+.medical-footer .container {
+    display: flex;
+    flex-direction: column; /* Елементи футера один під одним */
+    align-items: center;
+}
+
+.medical-footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0; /* Відступ зверху для навігації футера */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.medical-footer nav ul li {
+    margin: 0 10px;
+    margin-bottom: 5px;
+}
+
+.medical-footer nav ul li a {
+    color: #f8f9fa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.medical-footer nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Медіа-запит для адаптації під менші екрани (до 768px) */
+@media (max-width: 768px) {
+    /* Add responsive styles here */
+}
